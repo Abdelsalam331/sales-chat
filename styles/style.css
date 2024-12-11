@@ -177,8 +177,7 @@ button {
 
 .chat .main-chat .message .image .danny {
   width: 100%;
-  height: ;
-  aspect-ratio: 1;
+  height: 100%;
 }
 
 .chat .main-chat .message h2 {

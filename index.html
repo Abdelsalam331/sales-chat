@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>frontline ai chat</title>
+  </head>
+  <body>
+    <nav class="navigation-bar">
+      <button class="add-button">
+        <img src="./media/icons/add.svg" alt="add button" />
+      </button>
+      <ul class="links">
+        <div class="active-status" id="active-status" data-active="1"></div>
+        <li>
+          <a data-set-active="1">
+            <img src="./media/icons/home.svg" alt="chat home link" />
+          </a>
+        </li>
+        <li>
+          <a data-set-active="2">
+            <img src="./media/icons/history.svg" alt="chat history link" />
+          </a>
+        </li>
+        <li>
+          <a data-set-active="3">
+            <img src="./media/icons/dashboard.svg" alt="chat dashboard link" />
+          </a>
+        </li>
+        <li>
+          <a data-set-active="4">
+            <img src="./media/icons/settings.svg" alt="chat settings link" />
+          </a>
+        </li>
+      </ul>
+      <!-- <button class="profile-button">
+        <img src="./media/images/danny.webp" alt="profile button" />
+      </button> -->
+    </nav>
+    <div class="chat">
+      <div class="main-chat">
+        <div class="message">
+          <div class="image">
+            <img src="./media/images/small-logo.svg" alt="front-line logo" />
+          </div>
+          <h2>Welcome there !</h2>
+          <p id="chat-bot-message">
+            Hello to Frontline AI, where your sales achievements come to life.
+            Turn your efforts into a dynamic portfolio that showcases your
+            skills, drives growth, and earns the recognition you deserve. Start
+            by telling us:<br />
+            <strong>Which company did you sell to?</strong>
+          </p>
+        </div>
+      </div>
+      <form class="form" id="form">
+        <div class="first">
+          <button type="button">
+            <img src="./media/icons/magic-wand.svg" alt="suggest" />
+          </button>
+          <input
+            type="text"
+            placeholder="Reply to the AI or ask a question...."
+            id="userText"
+          />
+        </div>
+        <div class="second">
+          <button class="select">
+            <h3>Connect source</h3>
+            <img src="./media/icons/arrow-down.svg" alt="arrow-down" />
+          </button>
+          <div class="submit-and-info">
+            <div><span id="letters-typed">0</span>/3000</div>
+            <button type="submit">
+              <img src="./media/icons/send.svg" alt="send" />
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "Clash Display";
+  src: url("./fonts/ClashDisplay-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./fonts/ClashDisplay-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RoobertPRO";
+  src: url("./fonts/RoobertPRO-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RoobertPRO";
+  src: url("./fonts/RoobertPRO-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "RoobertPRO";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+button {
+  all: unset;
+  display: block;
+  cursor: pointer;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  background-color: #f9f9f7;
+  padding: 26px 14px 26px 11px;
+}
+
+.navigation-bar .add-button {
+  background-color: #ffffff;
+  width: 32px;
+  aspect-ratio: 1;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.navigation-bar .links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: relative;
+}
+
+.navigation-bar .links .active-status {
+  width: 32px;
+  aspect-ratio: 1;
+  background-color: #ebebeb;
+  border-radius: 6px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  transition: 300ms;
+}
+
+.navigation-bar .links .active-status[data-active="2"] {
+  top: calc(39px);
+}
+
+.navigation-bar .links .active-status[data-active="3"] {
+  top: calc(39px * 2);
+}
+
+.navigation-bar .links .active-status[data-active="4"] {
+  top: calc(39px * 3);
+}
+
+.navigation-bar .links li a {
+  width: 32px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation-bar .profile-button {
+  width: 28px;
+  aspect-ratio: 1;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.navigation-bar .profile-button img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.chat {
+  padding-top: 80px;
+  padding-bottom: 63px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 864px;
+  transform: translateX(59.3625px);
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat .main-chat {
+  /* overflow-y: scroll; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.chat .main-chat .message {
+  display: grid;
+  grid-template-columns: 31px 1fr;
+  column-gap: 16px;
+  row-gap: 14px;
+}
+
+.chat .main-chat .message .image {
+  width: 31px;
+  height: 31px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.chat .main-chat .message .image img {
+  width: 23px;
+  height: 21px;
+}
+
+.chat .main-chat .message .image .danny {
+  width: 100%;
+  height: ;
+  aspect-ratio: 1;
+}
+
+.chat .main-chat .message h2 {
+  font-size: 15px;
+  font-family: "Clash Display";
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.chat .main-chat .message p {
+  grid-column: 2;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 674px;
+}
+
+.chat .form {
+  padding: 16px;
+  background-color: #f4f4f4;
+  border: 1px solid #e2e2e2;
+  border-radius: 11px;
+}
+
+.chat .form .first {
+  display: flex;
+  margin-bottom: 81px;
+  gap: 8px;
+}
+
+.chat .form .first input {
+  all: unset;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 15.17px;
+  color: #636363;
+}
+
+.chat .form .second {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat .form .second .select {
+  display: flex;
+  align-items: center;
+  width: 179px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.chat .form .second .select h3 {
+  color: #616161;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.chat .form .second .submit-and-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.chat .form .second .submit-and-info div {
+  font-size: 13px;
+  font-weight: 500;
+  color: #636363;
+}
+
+.chat .form .second .submit-and-info button {
+  background-color: #aff300;
+  width: 28px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.chat .form .second .submit-and-info button img {
+  width: 18px;
+  aspect-ratio: 1;
+}
